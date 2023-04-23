@@ -1,6 +1,11 @@
 pipeline {
     agent any 
     stages {
+        stage ('pom files')
+        steps{
+            sh ' cd Calculator'
+        }
+    }
         stage('clean') { 
             steps {
                 sh 'mvn clean'
