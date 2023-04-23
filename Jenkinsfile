@@ -14,6 +14,7 @@ pipeline {
         stage('validate') { 
             steps {
 		    sh 'pwd'
+		    sh 'ls -l'
                 sh 'mvn validate'
             }
         }
