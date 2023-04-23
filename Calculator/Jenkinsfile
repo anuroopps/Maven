@@ -4,14 +4,10 @@ pipeline {
         stage ('pom files'){
         steps{
             sh ' pwd'
+            sh 'rm -r *'
+            sh 'mvn clean'
         }
     }
-        stage('moving to pom'){
-            steps{
-         sh 'ls'      
-                sh ' cd Calculator'
-                sh ' ls -l'
-            }
-        }
+        
     }
 }
