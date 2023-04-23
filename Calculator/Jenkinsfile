@@ -6,14 +6,9 @@ pipeline {
             sh ' pwd'
         }
     }
-        stage('clean') { 
-            steps {
-                sh 'mvn clean'
-            }
-        }
-        stage('validate') { 
-            steps {
-                sh 'mvn validate'
+        stage('moving to pom'){
+            steps{
+         sh 'ls'       
             }
         }
     }
