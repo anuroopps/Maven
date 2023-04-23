@@ -13,6 +13,7 @@ pipeline {
         }
         stage('validate') { 
             steps {
+		    sh 'pwd'
                 sh 'mvn validate'
             }
         }
