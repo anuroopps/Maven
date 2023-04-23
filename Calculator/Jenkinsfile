@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('pom files'){
         steps{
-            sh ' cd Calculator'
+            sh ' pwd'
         }
     }
         stage('clean') { 
