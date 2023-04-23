@@ -8,7 +8,9 @@ pipeline {
     }
         stage('moving to pom'){
             steps{
-         sh 'ls'       
+         sh 'ls'      
+                sh ' cd Calculator'
+                sh ' ls -l'
             }
         }
     }
