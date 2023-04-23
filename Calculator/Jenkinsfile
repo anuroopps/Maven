@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     stages {
-        stage ('pom files')
+        stage ('pom files'){
         steps{
             sh ' cd Calculator'
         }
